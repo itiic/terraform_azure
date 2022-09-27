@@ -6,3 +6,7 @@ resource "azurerm_resource_group" "instance" {
 output "name" {
   value = azurerm_resource_group.instance.name
 }
+
+output "location" {
+  value = azurerm_resource_group.instance.location
+}
