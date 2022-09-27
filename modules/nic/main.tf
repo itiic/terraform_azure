@@ -18,3 +18,7 @@ output "name" {
 output "private_ip_address" {
   value = azurerm_network_interface.instance.ip_configuration[0].private_ip_address
 }
+
+output "id" {
+  value = azurerm_network_interface.instance.id
+}
