@@ -34,10 +34,10 @@ module "subnet_test1" {
 }
 
 
-module "subnet_test1" {
+module "subnet_test2" {
   source                           = "../../modules/subnet"
-  instance_name                    = "${module.vnet_test1.name}-subnet-test1"
-  instance_subnet_address_prefixes = ["10.0.0.0/24"]
+  instance_name                    = "${module.vnet_test1.name}-subnet-test2"
+  instance_subnet_address_prefixes = ["10.0.1.0/24"]
   instance_virtual_network_name    = module.vnet_test1.name
   instance_resource_group_name     = module.rg_west_europe.name
 }
